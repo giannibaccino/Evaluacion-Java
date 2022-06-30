@@ -19,3 +19,19 @@
 ,src/main/java/ejercicios1a14/Ejercicio9.java,0\d\0dad2b36a7a854fa9cef2af97493b8b26af9e414
 ]
 -src/main/java/ejercicios1a14/Ejercicio10.java,1\8\18f2cdb28f1ac6c30e6d6b423703cb09d31ebd29
+]
+-src/main/java/ejercicios1a14/Ejercicio11.java,9\f\9f9d34b07699d08f50cae42037d4dc2e6bfae98d
+]
+-src/main/java/ejercicios1a14/Ejercicio12.java,3\d\3d9ce2b023537696a8a64b927b282c2b079d14c2
+]
+-src/main/java/ejercicios1a14/Ejercicio13.java,4\7\47a6385e90cc2ea907a99bd8b62a2df188febca5
+]
+-src/main/java/ejercicios1a14/Ejercicio14.java,4\4\4466a706a4dfb54015fe546b778f39b545fbbbe2
+S
+#src/main/java/ejercicio15/Menu.java,b\6\b632eda04fa2f0fe69491126447a014c582bea5f
+9
+	README.md,8\e\8ec9a00bfd09b3190ac6b22251dbb1aa95a0579d
+V
+&src/main/java/Ejercicio16/Persona.java,8\a\8a19844de1d7dbd5613f741907c57d27986c560a
+Y
+)src/main/java/Ejercicio16/Ejecutable.java,8\c\8c07c7ab29ea033a63ebb082f02b969788cffe91

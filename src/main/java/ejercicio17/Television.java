@@ -26,14 +26,16 @@ public class Television extends Electrodomestico {
         return tdt;
     }
 
-    public double precioFinal(){
-        double x = 1;
-        double y = 0;
+    @Override
+    public double precioFinal() {
+        double res = 1;
+        double tdt = 0;
+        double precio = super.precioFinal();
 
         if(this.res > 40)
-            x = 1.3;
+            res = 1.3;
         if(this.tdt)
-            y = 50;
-        return (super.precioFinal() + y) * x;
+            tdt = 50;
+        return (precio + tdt) * res;
     }
 }

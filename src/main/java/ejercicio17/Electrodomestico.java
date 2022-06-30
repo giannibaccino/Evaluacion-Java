@@ -1,7 +1,6 @@
 package ejercicio17;
 
 public class Electrodomestico {
-    //atributos heredables
     double baseprice = 100;
     String color = "blanco"; //negro,rojo,azul y gris
     char consume = 'F';
@@ -16,8 +15,8 @@ public class Electrodomestico {
 
     public Electrodomestico(double baseprice, String color, char consume, double weight) {
         this.baseprice = baseprice;
-        this.color = color;
-        this.consume = consume;
+        this.color = comprobarColor(color);
+        this.consume = comprobarConsumoEnergetico(consume);
         this.weight = weight;
     }
 
@@ -37,49 +36,54 @@ public class Electrodomestico {
         return weight;
     }
 
-    public void comprobarConsumoEnergetico(char letra){
+    public char comprobarConsumoEnergetico(char letra){
         if(letra != 'A' || letra != 'B' || letra != 'C' || letra != 'D' || letra != 'E' || letra != 'F')
-            this.consume = 'F';
+            return 'F';
+        else
+            return letra;
     }
 
-    public void comprobarColor(String color){
+    public String comprobarColor(String color){
         if(!color.equalsIgnoreCase("blanco") || !color.equalsIgnoreCase("negro") || !color.equalsIgnoreCase("rojo") || !color.equalsIgnoreCase("azul") || !color.equalsIgnoreCase("gris"))
-            this.color = "blanco";
+            return "blanco";
+        else
+            return color;
     }
 
     public double precioFinal(){
-        double x = 0;
-        double y = 0;
+        double consumo = 0;
+        double peso = 0;
 
         switch (this.consume){
             case 'A':
-                x = 100;
+                consumo = 100;
                 break;
             case 'B':
-                x = 80;
+                consumo = 80;
                 break;
             case 'C':
-                x = 60;
+                consumo = 60;
                 break;
             case 'D':
-                x = 50;
+                consumo = 50;
                 break;
             case 'E':
-                x = 30;
+                consumo = 30;
                 break;
             case 'F':
-                x = 10;
+                consumo = 10;
                 break;
         }
 
         if(this.weight <= 19)
-            y = 10;
+            peso = 10;
         else if(this.weight >= 20 && this.weight <= 49)
-            y = 50;
+            peso = 50;
         else if(this.weight >= 50 && this.weight <= 79)
-            y = 80;
+            peso = 80;
         else
-            y = 100;
-        return (this.baseprice + x + y);
+            peso = 100;
+
+        return (this.baseprice + consumo + peso);
     }
 }
