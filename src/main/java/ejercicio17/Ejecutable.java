@@ -23,7 +23,7 @@ public class Ejecutable {
         for(Electrodomestico elemento : array){
             if(elemento instanceof Television)
                 teles += elemento.precioFinal();
-            else if(elemento instanceof  Lavadora)
+            else if(elemento instanceof Lavadora)
                 lavas += elemento.precioFinal();
             else
                 electros += elemento.precioFinal();

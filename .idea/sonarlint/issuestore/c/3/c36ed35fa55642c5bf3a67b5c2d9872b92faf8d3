@@ -1,0 +1,6 @@
+
+t	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.( ¼·…úÿÿÿÿ
+R
+java:S1117"6Rename "res" which hides the field declared at line 5.(–ßÍn8«õ«¨›0
+S
+java:S1117 "6Rename "tdt" which hides the field declared at line 6.(ù±£Þ8³±¬¨›0
