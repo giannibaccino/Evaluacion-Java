@@ -21,14 +21,17 @@ public class Ejecutable {
         double teles = 0;
 
         for(Electrodomestico elemento : array){
-            if(elemento instanceof Television)
+            if(elemento instanceof Television){
                 teles += elemento.precioFinal();
-            else if(elemento instanceof Lavadora)
+            }
+            else if(elemento instanceof Lavadora) {
                 lavas += elemento.precioFinal();
+            }
             else
                 electros += elemento.precioFinal();
         }
         electros += teles + lavas;
+
         System.out.printf("Precio final de electrodomesticos: %.2f", electros);
         System.out.printf("€" + "\n" + "Precio final de lavadoras: %.2f", lavas);
         System.out.printf("€" + "\n" + "Precio final de televisiones: %.2f", teles);

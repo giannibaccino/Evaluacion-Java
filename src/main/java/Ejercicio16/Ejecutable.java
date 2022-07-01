@@ -33,18 +33,15 @@ public class Ejecutable {
         System.out.println("Ingresa tu altura en m");
         double height = leer.nextDouble();
 
-        Persona p1 = new Persona(name, age, 0, sex, weight, height, 0);
-        p1.generarDNI();
+        Persona p1 = new Persona(name, age, 0,'T', sex, weight, height, 0);
         p1.setImc(p1.calcularIMC());
 
         Persona p2 = new Persona(name, age, sex);
-        p2.generarDNI();
         p2.setWeight(92.5);
         p2.setHeight(1.89);
         p2.setImc(p2.calcularIMC());
 
         Persona p3 = new Persona();
-        p3.generarDNI();
         p3.setName("Marta");
         p3.setAge(27);
         p3.setSex('M');

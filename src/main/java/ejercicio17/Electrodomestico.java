@@ -83,7 +83,6 @@ public class Electrodomestico {
             peso = 80;
         else
             peso = 100;
-
         return (this.baseprice + consumo + peso);
     }
 }
